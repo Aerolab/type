@@ -1,0 +1,105 @@
+#winter
+  position: relative
+  @include outer-container($containerWidth)
+  font-family: "Gentium Basic", serif
+  font-size: .875em
+  line-height: 1.575em
+  color: #A4A4A4
+  nav
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    font-family: "Cantata One"
+    padding: 20px 0
+    &:after
+      content: ""
+      display: block
+      width: 0
+      height: 0
+      clear: both
+    a
+      color: #4b4b4b
+      text-decoration: none
+      padding: .5em 1em
+      border: 1px solid transparent
+    .logo
+      float: left
+      color: #A08153
+      border: 1px solid #A08153
+    ul
+      float: right
+      padding: 0
+      margin: 0
+      li
+        display: inline-block
+        a
+          display: block
+  article
+    @include span-columns(10 of 12)
+    @include shift(1)
+    h3
+      font-size: 1.357
+      font-family: "Cantata One"
+      font-weight: normal
+      color: #4b4b4b
+      letter-spacing: -.5px
+      transform: rotate(-90deg)
+      position: absolute
+      top: 50%
+      left: 0
+      small
+        font-family: "Gentium Basic"
+        font-size: .85em
+        color: #acacac
+        margin-left: 2em
+  div
+    @include span-columns(4 of 10)
+    position: relative
+    left: -35px
+    padding-top: 70px
+    h2
+      font-family: "Cantata One"
+      font-size: 2.15em
+      font-weight: normal
+      line-height: 1.26em
+      color: #4b4b4b
+      border-bottom: 1px solid #A08153
+      padding-bottom: 1em
+      margin-bottom: 1em
+    p
+      margin-bottom: 2em
+      &:after
+        content: ""
+        display: block
+        width: 30px
+        height: 1px
+        background: rgba(151,151,151,.34)
+        margin-top: 2em
+      &:last-child:after
+        display: none
+  figure
+    @include span-columns(5 of 10)
+    margin: 0
+    @include shift(1)
+    position: relative
+    img
+      width: 100%
+      height: auto
+      border: 70px solid #f7f7f7
+    figcaption
+      font-size: 11.85em
+      font-family: "Cantata One"
+      color: #4b4b4b
+      letter-spacing: -5.5px
+      position: absolute
+      bottom: 35px
+      left: 35px
+      line-height: 1em
+      &:before
+        content: "2."
+        font-size: .77em
+        line-height: 1em
+        color: #A08153
+        display: block
+        text-indent: -13px

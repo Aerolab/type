@@ -1,0 +1,108 @@
+$festivalMarginLeft: 300px
+
+#festival
+  background: url(../images/festival-hero.jpg) center center
+  background-size: cover
+  color: #fff
+  
+  header
+    position: relative
+    margin-top: 3em
+    margin-bottom: 6em
+
+  h2
+    font-family: "Playfair Display", serif
+    font-size: 4.875em
+    line-height: 1.3em
+    letter-spacing: 17.5px
+
+    > span
+      display: block
+      position: relative
+      span
+        display: block
+      &:after
+        content: ""
+        display: block
+        height: 6px
+        background: #FBDB45
+        position: absolute
+        top: 56px
+      &:nth-child(1), &:nth-child(3)
+        &:after
+          width: 160px
+          left: $festivalMarginLeft
+          -webkit-animation-duration: 1s
+          animation-duration: 1s
+          -webkit-animation-fill-mode: both
+          animation-fill-mode: both
+          -webkit-animation-name: misc-left
+          animation-name: misc-left
+          animation-delay: .5s
+          -webkit-animation-delay: .5s
+          -webkit-transform-origin: center bottom
+          transform-origin: center bottom
+
+          -webkit-animation-timing-function: ease-in-out
+          animation-timing-function: ease-in-out
+      &:nth-child(2)
+        margin-left: $festivalMarginLeft
+        &:after
+          width: 40px
+          right: 100%
+          margin-right: 50px
+          -webkit-animation-duration: 1s
+          animation-duration: 1s
+          -webkit-animation-fill-mode: both
+          animation-fill-mode: both
+          -webkit-animation-name: misc-right
+          animation-name: misc-right
+          animation-delay: 1.15s
+          -webkit-animation-delay: 1.15s
+          -webkit-transform-origin: center bottom
+          transform-origin: center bottom
+
+          -webkit-animation-timing-function: ease-in-out
+          animation-timing-function: ease-in-out
+      &:nth-child(3)
+        text-indent: 20px
+
+  h3
+    font-family: "Playfair Display", serif
+    font-size: 1.2em
+    font-weight: normal
+    letter-spacing: 1.3px
+
+    > span
+      position: absolute
+      margin-top: -5px
+      span
+        position: relative
+        display: block
+      &:nth-child(1)
+        top: 50%
+        left: 10px
+      &:nth-child(2)
+        top: 83.5%
+        left: $festivalMarginLeft + 160px + 40px
+
+  p
+    font-family: "Cutive Mono"
+    text-transform: uppercase
+    padding-left: 20px
+    span
+      color: #FBDB45
+
+@keyframes misc-left
+  from
+    width: 0px
+  to
+    width: 160px
+
+@keyframes misc-right
+  from
+    width: 0px
+    margin-right: 90px
+  to
+    width: 40px
+    margin-right: 50px

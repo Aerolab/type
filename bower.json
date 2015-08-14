@@ -1,0 +1,15 @@
+{
+  "name": "grunt-website",
+  "version": "0.1.0",
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "~1.11.2",
+    "normalize-scss": "~3.0.2",
+    "bourbon": "~4.2.1",
+    "grunticon-loader": "https://github.com/jkenlooper/grunticon-loader.git#~1.0.0",
+    "neat": "~1.7.2",
+    "animate.css": "~3.4.0",
+    "wow": "~1.1.2"
+  },
+  "devDependencies": {}
+}

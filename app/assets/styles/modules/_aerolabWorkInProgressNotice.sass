@@ -1,0 +1,153 @@
+// Text
+
+// .small-text  font-size: $font-size-small
+
+// p  margin: 0
+
+// Big Number
+
+// .big-number
+//   font-size: 114px
+//   font-weight: $semibold
+//   color: #ff7b00
+//   line-height: 1
+
+
+// Links
+
+// p a,
+// .a
+//   border-bottom: 1px solid $orange
+//   padding: 0 0 1px
+
+//   &:hover, &:focus  border-bottom-style: dashed
+
+//   &:active  border-bottom-style: dotted
+
+
+// Featured Non-Headings
+
+// .fn-h1  font-size: 48px
+
+// Headings
+
+// $headings-line-height:    1.2;
+//   $h1:                      60px;
+//   $h2:                      36px;
+//   $h3:                      24px;
+//   $h4:                      16px;
+//   $h5:                      14px;
+//   $h6:                      10px;
+#aerolabWorkInProgressNotice
+
+  font-family: "Dosis"
+  // position: absolute
+
+  &:target,
+  &.is-active
+    opacity: 1
+    visibility: visible
+
+    &:before
+      display: block
+
+  opacity: 0
+  visibility: hidden
+  outline: none
+
+  .aerolabWorkInProgressContent
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    -webkit-transform: translate(-50%, -50%)
+
+
+    max-width: 668px
+    width: 668px
+    @media screen and (max-width: 768px)
+      width: 320px
+
+    box-sizing: border-box
+    border: 3px solid #FF7819
+    border-radius: 3px
+    background: #FFF
+
+    margin: 0 auto
+
+    padding: 70px
+    z-index: 11
+
+  &:before
+    content: ""
+    display: none
+    background: rgba(0,0,0,.4)
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 7
+
+  h1
+    line-height: 1.2
+
+    margin: 0
+    letter-spacing: 0.2em
+    font-weight: 600
+    text-transform: uppercase
+    font-size: 36px
+
+    padding: 0 0 14px
+    position: relative
+
+    color: #000000
+
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 34px
+      height: 5px
+      background: #000000
+      border-radius: 2px
+  p
+    color: #000000
+
+  &.is-chrome
+    .aerolabWorkInProgressButtonOrange
+      display: none
+.aerolabWorkInProgressNoticeButtons
+  button, a
+    display: inline-block
+    border-width: 1px
+    border-style: solid
+    background: transparent
+    border-radius: 25px
+    font-size: 16px
+    font-weight: 600
+    color: #000
+    padding: 12px 41px
+    text-transform: capitalize
+
+    &.aerolabWorkInProgressButtonWhite
+      border: 1px solid #FF7819
+    &.aerolabWorkInProgressButtonOrange
+      border: 1px solid #FF7819
+      background: #FF7819
+      color: #FFFFFF
+
+      &:hover, &:focus
+        border: 1px solid #FF7819
+        color: #000
+        background: transparent
+
+    &:hover, &:focus
+      border-color: #000
+    &:focus
+      outline: none
+    &:active
+      outline: none
+
+

@@ -1,0 +1,28 @@
+{
+	"preset": "jquery",
+	"requireSpaceBeforeBlockStatements": true,
+	"validateQuoteMarks": "'",
+	"requireSpaceAfterBinaryOperators": true,
+	"requireSpaceBeforeBinaryOperators": true,
+	"disallowEmptyBlocks": true,
+	"disallowMixedSpacesAndTabs": "smart",
+	"disallowNewlineBeforeBlockStatements": true,
+	"disallowTrailingComma": true,
+	"disallowTrailingWhitespace": true,
+	"requireCamelCaseOrUpperCaseIdentifiers": true,
+	"requireCommaBeforeLineBreak": true,
+	"requireLineBreakAfterVariableAssignment": true,
+	"requireSpaceAfterLineComment": { "allExcept": ["#", "=", "/"] },
+	"requireSpaceBeforeBlockStatements": true,
+	"requireSpaceBetweenArguments": true,
+	"requireSpaceAfterKeywords": [
+		"if",
+		"else",
+		"for",
+		"while",
+		"do",
+		"switch",
+		"try",
+		"catch"
+	]
+}

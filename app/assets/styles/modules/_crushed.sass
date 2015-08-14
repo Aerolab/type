@@ -1,0 +1,109 @@
+#crushed
+  @include outer-container($containerWidth)
+  @include flex-props(column nowrap, center, center, flex-start)
+  color: #665757
+
+  div
+    @include span-columns(3 of 8)
+    @include shift(4)
+    position: relative
+    top: 6em
+    &:after 
+      content: ""
+      display: block
+      position: absolute
+      right: 362px
+      left: -180px
+      top: -130px
+      bottom: -70px
+      background: #fff2f2
+      z-index: -2
+      -webkit-animation-duration: 1s
+      animation-duration: 1s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+      -webkit-animation-name: crushed-bg
+      animation-name: crushed-bg
+      -webkit-transform-origin: center bottom
+      transform-origin: center bottom
+
+      -webkit-animation-timing-function: ease-in-out
+      animation-timing-function: ease-in-out
+  img
+    position: absolute
+    right: 100%
+    top: 50%
+    margin-top: -410px
+    margin-right: 95px
+  header
+    position: relative
+    left: -80px
+  h2
+    font-size: 4.5em
+    line-height: 1em
+    font-family: "Abril Fatface", serif
+    font-weight: normal
+    color: #dd1d1e
+    span
+      display: block
+      z-index: 10
+      position: absolute
+      top: 0
+      right: 100%
+      margin-right: -40px
+      opacity: 0
+  h3, .btn
+    font-size: .75em
+    line-height: 1.3em
+    font-family: "Oswald", sans-serif
+    font-weight: 300
+    text-transform: uppercase
+    letter-spacing: 4px
+  h3
+    line-height: 3em
+  p
+    font-family: "Roboto", sans-serif
+    font-size: .875em
+    line-height: 1.71em
+    margin: 2em 0
+  .btn
+    display: inline-block
+    text-decoration: none
+    padding: 1.25em 4em
+    margin: 1em 0
+    color: #665757
+    position: relative
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      border: 1px solid #dd1d1e
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      top: 8px
+      left: 20px
+      width: 100%
+      height: 100%
+      background: #d9fcff
+      z-index: -1
+
+@keyframes crushed-bg
+  from
+    top: -130px
+    left: -180px
+    right: 150%
+    bottom: -70px
+    opacity: 0
+
+  to
+    right: 362px
+    left: -180px
+    top: -130px
+    bottom: -70px
+    opacity: 1

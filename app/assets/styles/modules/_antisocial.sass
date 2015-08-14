@@ -1,0 +1,87 @@
+$antisocial-color: #161616
+
+.mask-01
+  border-top: 50px solid $antisocial-color
+  border-bottom: 50px solid $antisocial-color
+
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  -webkit-animation-name: mask-01
+  animation-name: mask-01
+  -webkit-transform-origin: center bottom
+  transform-origin: center bottom
+
+  -webkit-animation-timing-function: ease-in-out
+  animation-timing-function: ease-in-out
+
+  &:before
+    content: ""
+    display: block
+    width: 100%
+    background: $antisocial-color
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 100%
+    margin-right: 70px
+    z-index: 0
+    
+    -webkit-animation-duration: 1s
+    animation-duration: 1s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+    -webkit-animation-name: mask-01-left
+    animation-name: mask-01-left
+    -webkit-transform-origin: center bottom
+    transform-origin: center bottom
+
+    -webkit-animation-timing-function: ease-in-out
+    animation-timing-function: ease-in-out
+  &:after
+    content: ""
+    display: block
+    width: 100%
+    background: $antisocial-color
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 100%
+    transform: translateX(-50%)
+    margin-left: 390px
+    z-index: 0
+
+    -webkit-animation-duration: 1s
+    animation-duration: 1s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+    -webkit-animation-name: mask-01-right
+    animation-name: mask-01-right
+    -webkit-transform-origin: center bottom
+    transform-origin: center bottom
+
+    -webkit-animation-timing-function: ease-in-out
+    animation-timing-function: ease-in-out
+
+@keyframes mask-01
+  from
+    border-top: 0px solid $antisocial-color
+    border-bottom: 0px solid $antisocial-color
+  to
+    border-top: 50px solid $antisocial-color
+    border-bottom: 50px solid $antisocial-color
+
+@keyframes mask-01-left
+  from
+    transform: translateX(0)
+
+  to
+    transform: translateX(50%)
+
+@keyframes mask-01-right
+  from
+    transform: translateX(0)
+
+  to
+    transform: translateX(-50%)
