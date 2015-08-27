@@ -19,4 +19,6 @@ $( document ).ready( function() {
     mobile: false
   });
   wow.init();
+
+  $("#space h2").lettering();
 });

@@ -1,0 +1,268 @@
+#space
+  background: url(../images/space-hero.jpg) no-repeat center
+  background-size: cover
+  position: relative
+  > div 
+    @include outer-container(1080px)
+    position: static
+    padding-top: 55px
+  nav
+    position: absolute
+    top: 40px
+    width: 100%
+    @include outer-container(1080px)
+    padding: 0 100px
+  .logo
+    float: left
+    color: #fff
+    font-size: 2em
+    letter-spacing: 2px
+    text-shadow: 0px 1px 10px rgba(0,0,0,.3)
+    font-family: "Dorsa", sans-serif
+    text-transform: uppercase
+    text-decoration: none
+  .hamburger
+    float: right
+    display: block
+    width: 20px
+    height: 20px
+    border-top: 1px solid #fb6a2f
+    position: relative
+    &:before, &:after
+      content: ""
+      display: block
+      width: 14px
+      height: 1px
+      background: #fb6a2f
+      position: absolute
+      top: 4px
+      right: 0
+    &:after
+      width: 8px
+      top: 9px
+  .pager
+    position: absolute
+    right: 0
+    bottom: 0
+  h2
+    font-family: "Dorsa", sans-serif
+    font-weight: normal
+    font-size: 21.4em
+    text-transform: uppercase
+    text-align: center
+    color: #fae8e8
+    line-height: .6em
+    color: #f2ecda
+    opacity: .7
+    text-shadow: 1px 21px 20px rgba(0,0,0,.7)
+    padding-top: 50px
+    span
+      padding: 0 70px
+      display: inline-block
+      position: relative
+      &:after
+        font-family: "Cardo", serif
+        font-size: 9px
+        display: block
+        position: absolute
+        color: #fff
+        letter-spacing: 3px
+        line-height: 1em
+      &.char2:after
+        content: "0.014908"
+        bottom: 100%
+        right: 30px
+        margin-bottom: -5px
+        transform: rotate(-90deg)
+      &.char3
+        z-index: 2
+        &:after
+          content: "34N 40' 50.12\""
+          top: -45px
+          left: 77px
+        &:before
+          content: ""
+          width: 249px
+          height: 249px
+          display: block
+          position: absolute
+          z-index: -1
+          background: url(../images/space-dude.png) no-repeat
+          left: -65px
+          top: 35px
+          margin: 150px 0 0 130px
+          -webkit-animation-duration: 20s
+          animation-duration: 20s
+          -webkit-animation-fill-mode: both
+          animation-fill-mode: both
+          -webkit-animation-name: rock01
+          animation-name: rock01
+          // animation-delay: 1.15s
+          // -webkit-animation-delay: 1.15s
+          -webkit-transform-origin: center bottom
+          transform-origin: center bottom
+
+          -webkit-animation-timing-function: ease-in-out
+          animation-timing-function: ease-in-out
+
+          animation-iteration-count: infinite
+      &.char5:after
+        content: "-74.044636"
+        top: 100%
+        margin-top: -30px
+        transform: rotate(-90deg)
+        left: 25px
+      &.char6:after
+        content: "+40.689060"
+        bottom: -30px
+        left: 77px
+      &.char7
+        z-index: 1
+      &.char8
+        position: relative
+        z-index: 2
+        &:after
+          content: ""
+          display: block
+          position: absolute
+          top: -70px
+          left: 60px
+          width: 194px
+          height: 187px
+          background: url(../images/space-rock-04.png) no-repeat
+          z-index: -1
+          margin: 100px 0 0 100px
+
+          -webkit-animation-duration: 10s
+          animation-duration: 10s
+          -webkit-animation-fill-mode: both
+          animation-fill-mode: both
+          -webkit-animation-name: rock01
+          animation-name: rock01
+          // animation-delay: 1.15s
+          // -webkit-animation-delay: 1.15s
+          -webkit-transform-origin: center bottom
+          transform-origin: center bottom
+
+          -webkit-animation-timing-function: ease-in-out
+          animation-timing-function: ease-in-out
+
+          animation-iteration-count: infinite
+        
+  h3
+    font-family: "Cardo", serif
+    font-weight: normal
+    font-style: italic
+    font-size: 1.71em
+    padding-left: 100px
+    letter-spacing: 4px
+    position: relative
+    z-index: 2
+    color: #f2ecda
+    opacity: .7
+    text-shadow: 1px 21px 20px rgba(0,0,0,.7)
+  .floatingStuff
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    pointer-events: none
+    .thingy
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      pointer-events: none
+    .rock01
+      width: 753px
+      height: 610px
+      background: url(../images/space-rock-01.png) no-repeat
+      margin: -150px 0 0 -710px
+      z-index: 2
+
+      -webkit-animation-duration: 25s
+      animation-duration: 25s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+      -webkit-animation-name: rock01
+      animation-name: rock01
+      // animation-delay: 1.15s
+      // -webkit-animation-delay: 1.15s
+      -webkit-transform-origin: center bottom
+      transform-origin: center bottom
+
+      -webkit-animation-timing-function: ease-in-out
+      animation-timing-function: ease-in-out
+
+      animation-iteration-count: infinite
+    .rock02
+      width: 490px
+      height: 581px
+      background: url(../images/space-rock-02.png) no-repeat
+      margin: -500px 0 0 -80px
+
+      -webkit-animation-duration: 15s
+      animation-duration: 15s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+      -webkit-animation-name: rock01
+      animation-name: rock01
+      // animation-delay: 1.15s
+      // -webkit-animation-delay: 1.15s
+      -webkit-transform-origin: center bottom
+      transform-origin: center bottom
+
+      -webkit-animation-timing-function: ease-in-out
+      animation-timing-function: ease-in-out
+
+      animation-iteration-count: infinite
+    .rock03
+      width: 109px
+      height: 98px
+      background: url(../images/space-rock-03.png) no-repeat
+      margin: -200px 0 0 -260px
+
+      -webkit-animation-duration: 9s
+      animation-duration: 9s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+      -webkit-animation-name: rock01
+      animation-name: rock01
+      // animation-delay: 3s
+      // -webkit-animation-delay: 3s
+      -webkit-transform-origin: center bottom
+      transform-origin: center bottom
+
+      -webkit-animation-timing-function: ease-in-out
+      animation-timing-function: ease-in-out
+
+      animation-iteration-count: infinite
+    .rock05
+      width: 682px
+      height: 727px
+      background: url(../images/space-rock-05.png) no-repeat
+      margin: 340px 0 0 610px
+
+      -webkit-animation-duration: 32s
+      animation-duration: 32s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+      -webkit-animation-name: rock01
+      animation-name: rock01
+      // animation-delay: 1s
+      // -webkit-animation-delay: 1s
+      -webkit-transform-origin: center bottom
+      transform-origin: center bottom
+
+      -webkit-animation-timing-function: ease-in-out
+      animation-timing-function: ease-in-out
+
+      animation-iteration-count: infinite
+
+@keyframes rock01
+  0%, 100%
+    transform: translate(-50%, -49.5%) rotate(0deg)
+  50%
+    transform: translate(-49.5%, -50%) rotate(-3deg)

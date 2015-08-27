@@ -1,0 +1,97 @@
+#penny
+  font-family: "Circular"
+  font-weight: bold
+  font-size: .875em
+  line-height: 1.72em
+  color: #9b9b9b
+  > div
+    width: 100%
+    height: 100%
+    padding: 50px 0
+    @include outer-container($containerWidth)
+  h1
+    font-size: 14.3em
+    text-transform: uppercase
+    letter-spacing: 100px
+    line-height: 1em
+    color: #FC2F4D
+    position: relative
+    left: -17px
+    span
+      display: block
+      color: rgba(28,98,141,.6)
+      margin-left: 80px
+  h2
+    font-size: 1.72em
+    text-transform: uppercase
+    color: #0D9EFF
+    margin-bottom: 12px
+  h2 + p
+    width: 280px
+    margin-bottom: 2em
+  nav
+    position: absolute
+    top: 30px
+    right: 40px
+  .btn-shopping
+    font-size: 1.3em
+    color: #0D9EFF
+    text-transform: uppercase
+    text-decoration: none
+  header
+    width: 600px
+    position: relative
+    &:before
+      content: ""
+      width: 600px
+      height: 36px
+      display: block
+      background: #FC2F4D
+      transform: skew(-10deg)
+      z-index: 1
+      position: absolute
+      top: 0
+      left: 0
+    &:after
+      content: ""
+      width: 150px
+      height: 36px
+      display: block
+      background: rgba(13,158,255,.5)
+      transform: skew(-10deg)
+      z-index: 2
+      position: absolute
+      right: -75px
+      top: -16px
+    .logo
+      color: #fff
+      text-decoration: none
+      position: relative
+      z-index: 2
+      font-size: 1.72em
+      font-weight: 900
+      font-style: italic
+      text-transform: uppercase
+      display: inline-block
+      padding: 5px 10px
+  .select-color
+    span
+      text-transform: uppercase
+      font-size: .86em
+      position: relative
+      top: -3px
+    ul
+      display: inline-block
+      vertical-align: middle
+      li
+        display: inline-block
+        list-style: none
+        a
+          display: block
+          width: 36px
+          height: 36px
+          border: 10px solid #fff
+          border-radius: 100%
+          background: #000
+          &.active
+            border: none

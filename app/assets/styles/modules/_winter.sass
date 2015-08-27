@@ -9,9 +9,10 @@
     position: absolute
     top: 0
     left: 0
+    z-index: 10
     width: 100%
     font-family: "Cantata One"
-    padding: 20px 0
+    padding: 40px 0
     &:after
       content: ""
       display: block
@@ -35,6 +36,17 @@
         display: inline-block
         a
           display: block
+          &:after
+            content: ""
+            display: block
+            width: 0
+            height: 1px
+            background: #A08153
+            transition: width ease-in-out .15s
+          &:hover:after
+            width: 100%
+        &.active a:after
+          width: 100%
   article
     @include span-columns(10 of 12)
     @include shift(1)
