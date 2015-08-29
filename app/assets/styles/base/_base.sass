@@ -21,10 +21,39 @@ section
 
 .composition
   min-height: 100%
-  height: 100%
+  height: 100vh
   @include display-flex
   @include flex-props(column nowrap, center, center, center)
 
 h1, h2, h3, h4, h5, h6, p
   margin: 0
   padding: 0
+
+.onepage-pagination
+  transform: translateY(-50%)
+  right: 20px
+  li a
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    &:before
+      width: 10px
+      height: 10px
+      border: 1px solid rgba(0,0,0,.15)
+      background: none
+      border-radius: 50%
+      transition: background ease-in-out .15s, border ease-in-out .15s
+    &.active:before
+      background: rgba(0,0,0,.15)
+      border: 1px solid transparent
+      margin-top: 0
+      left: auto
+
+.viewing-page-1 .onepage-pagination li a,
+.viewing-page-4 .onepage-pagination li a,
+.viewing-page-7 .onepage-pagination li a
+  &:before
+    border: 1px solid rgba(255,255,255,.15)
+  &.active:before
+    background: rgba(255,255,255,.15)
+    border: 1px solid transparent

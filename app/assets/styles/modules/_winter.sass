@@ -1,10 +1,14 @@
 #winter
   position: relative
-  @include outer-container($containerWidth)
   font-family: "Gentium Basic", serif
   font-size: .875em
   line-height: 1.575em
   color: #A4A4A4
+  .container
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    position: static
   nav
     position: absolute
     top: 0
@@ -12,7 +16,7 @@
     z-index: 10
     width: 100%
     font-family: "Cantata One"
-    padding: 40px 0
+    padding: 40px
     &:after
       content: ""
       display: block
@@ -50,6 +54,7 @@
   article
     @include span-columns(10 of 12)
     @include shift(1)
+    position: relative
     h3
       font-size: 1.357
       font-family: "Cantata One"
@@ -59,13 +64,13 @@
       transform: rotate(-90deg)
       position: absolute
       top: 50%
-      left: 0
+      left: -152px
       small
         font-family: "Gentium Basic"
         font-size: .85em
         color: #acacac
         margin-left: 2em
-  div
+  div:not(.container)
     @include span-columns(4 of 10)
     position: relative
     left: -35px

@@ -6,41 +6,112 @@
   color: #9b9b9b
   > div
     width: 100%
-    height: 100%
     padding: 50px 0
-    @include outer-container($containerWidth)
+    max-width: 1200px
+    position: relative
+  .board
+    width: 200px
+    position: absolute
+    z-index: 2
+    top: -100px
+    left: 17%
+  .image
+    position: absolute
+    top: 67px
+    right: 70px
+    .btn-order
+      border: 4px solid #FC2F4D
+      color: #FC2F4D
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 1.43em
+      padding: .75em 2.5em
+      display: inline-block
+      position: absolute
+      bottom: -30px
+      right: -40px
+    h3
+      font-size: 2.57em
+      color: #0D9EFF
+      position: absolute
+      bottom: 60px
+      right: -40px
+    .category
+      font-size: .72em
+      text-transform: uppercase
+      font-weight: 900
+      color: #0D9EFF
+      border: 2px solid #0D9EFF
+      padding: .5em 1em
+      display: inline-block
+      position: absolute
+      left: -40px
+      bottom: 100px
+      line-height: 1em
+  .chic
+    width: 370px
+    position: relative
+    z-index: -1
+    display: block
   h1
-    font-size: 14.3em
+    font-size: 12em
     text-transform: uppercase
-    letter-spacing: 100px
+    letter-spacing: 75px
     line-height: 1em
     color: #FC2F4D
-    position: relative
-    left: -17px
+    margin-left: -18px
+    &:before
+      content: ""
+      display: block
+      width: 50px
+      height: 4px
+      background: #0D9EFF
+      margin-left: 15px
     span
       display: block
       color: rgba(28,98,141,.6)
       margin-left: 80px
+      position: relative
+      z-index: 3
   h2
     font-size: 1.72em
     text-transform: uppercase
     color: #0D9EFF
     margin-bottom: 12px
+    margin-top: .5em
+    &:before
+      content: ""
+      display: block
+      width: 50px
+      height: 4px
+      background: #FA0026
+      margin-bottom: 1.5em
   h2 + p
     width: 280px
     margin-bottom: 2em
   nav
     position: absolute
-    top: 30px
+    top: 20px
     right: 40px
   .btn-shopping
-    font-size: 1.3em
+    font-size: 1em
     color: #0D9EFF
     text-transform: uppercase
     text-decoration: none
+    span
+      display: inline-block
+      width: 20px
+      height: 20px
+      background: #FC2F4D
+      border-radius: 50%
+      text-align: center
+      color: #fff
+      line-height: 20px
+      margin-left: 5px
   header
     width: 600px
     position: relative
+    margin-bottom: 1em
     &:before
       content: ""
       width: 600px
@@ -74,7 +145,22 @@
       text-transform: uppercase
       display: inline-block
       padding: 5px 10px
+      &:after
+        content: "."
+        color: #F8E71C
+      &:before
+        content: "\2122"
+        position: absolute
+        left: 100%
+        font-size: .75em
+        margin-left: -10px
   .select-color
+    &:before
+      content: ""
+      display: block
+      width: 50px
+      height: 4px
+      background: #0D9EFF
     span
       text-transform: uppercase
       font-size: .86em
@@ -93,5 +179,24 @@
           border: 10px solid #fff
           border-radius: 100%
           background: #000
+          position: relative
           &.active
             border: none
+            &:after
+              content: ""
+              display: block
+              width: 16px
+              height: 16px
+              border-radius: 50%
+              background: #FC2F4D
+              position: absolute
+              top: -2px
+              right: -2px
+        &.purple a
+          background: #BD10E0
+        &.blue a
+          background: #0D9EFF
+        &.black a
+          background: #000
+        &.green a
+          background: #7ED321

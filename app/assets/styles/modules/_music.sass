@@ -1,0 +1,105 @@
+#music
+  background: #00FFBC
+  font-family: "Superclarendon", serif
+  .cover
+    width: 535px
+    position: relative
+    z-index: 10
+  h1
+    font-size: 3.6em
+    line-height: 1.3em
+    color: #fff
+  h2
+    font-size: 2.7em
+    line-height: 1.3em
+    color: #000
+    margin-bottom: .5em
+  h1, h2
+    margin-left: 110px
+  .social
+    position: absolute
+    bottom: 40px
+    right: 40px
+    font-family: "Montserrat", sans-serif
+    font-size: .875em
+    margin: 0
+    padding: 0
+    a
+      color: #000
+      text-decoration: none
+      display: inline-block
+    li
+      display: inline-block
+      list-style: none
+      margin-left: 20px
+  .player
+    width: 400px
+    height: 550px
+    border: 6px solid #fff
+    position: absolute
+    top: -35px
+    left: -123px
+    padding-top: 160px
+    .btn
+      display: block
+      width: 64px
+      height: 64px
+      border-radius: 50%
+      background: #fff
+      margin-bottom: 12px
+      margin-left: -35px
+      color: #00FFBC
+      text-decoration: none
+      text-align: center
+      line-height: 64px
+      font-size: 1.5em
+      &.fa-backward:before
+        margin-left: -5px
+      &.fa-forward:before
+        margin-left: 5px
+    .progress
+      position: absolute
+      bottom: 0
+      width: 100%
+      &:after
+        content: attr(data-total)
+        color: #000
+        position: absolute
+        right: -6px
+        bottom: -28px
+        font-family: "Montserrat"
+        font-size: .65em
+      .handle
+        width: 6px
+        height: 28px
+        background: #fff
+        position: absolute
+        left: 25%
+        bottom: -17px
+        box-shadow: 0px 1px 10px rgba(0,0,0,.1)
+        &:after
+          content: attr(data-current)
+          color: #000
+          position: absolute
+          left: 0px
+          top: -21px
+          font-family: "Montserrat"
+          font-size: .65em
+  .btn-menu
+    display: block
+    width: 20px
+    height: 14px
+    border-top: 2px solid #000
+    border-bottom: 2px solid #000
+    position: absolute
+    top: 40px
+    right: 40px
+    &:before
+      content: ""
+      display: block
+      height: 2px
+      width: 100%
+      position: absolute
+      top: 50%
+      margin-top: -1px
+      background: #000

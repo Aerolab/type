@@ -6,6 +6,25 @@
   font-style: normal;
 }
 
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.fa-forward:before {
+  content: "\f04e";
+}
+.fa-backward:before {
+  content: "\f04a";
+}
+.fa-pause:before {
+  content: "\f04c";
+}
+
 @font-face {
   font-family: 'Circular';
   src: url('../fonts/CircularStd-Bold.eot');
@@ -36,5 +55,25 @@
     url('../fonts/CircularStd-Black.ttf')  format('truetype'),
     url('../fonts/CircularStd-Black.svg#CircularStd-Black') format('svg');
   font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Campton';
+  src: url('../fonts/Campton-Bold.eot');
+  src: url('../fonts/Campton-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Campton-Bold.woff') format('woff'),
+    url('../fonts/Campton-Bold.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Superclarendon';
+  src: url('../fonts/Superclarendon-Regular.eot');
+  src: url('../fonts/Superclarendon-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Superclarendon-Regular.woff') format('woff'),
+    url('../fonts/Superclarendon-Regular.ttf')  format('truetype');
+  font-weight: normal;
   font-style: normal;
 }

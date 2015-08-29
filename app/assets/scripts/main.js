@@ -21,4 +21,9 @@ $( document ).ready( function() {
   wow.init();
 
   $("#space h2").lettering();
+
+  $(".scrollable").onepage_scroll({
+    sectionContainer: "section",
+    loop: false
+  });
 });

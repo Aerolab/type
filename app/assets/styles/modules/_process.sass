@@ -1,0 +1,123 @@
+#process
+  background: #9e8fcc
+  font-family: "Campton", sans-serif
+  font-size: 1.72em
+  line-height: 1.25em
+  > div
+    background: #e5e5e5
+    width: 100%
+    max-width: 1080px
+    box-shadow: 0px 1px 40px 0px rgba(0,0,0,.1)
+    position: relative
+    &:before
+      content: "Biennale \AInternationale/ \A—Design \A"
+      white-space: pre
+      font-size: 4.2em
+      line-height: .8em
+      color: #ebffcc
+      letter-spacing: -3px
+      position: absolute
+      bottom: 35px
+      left: 602px
+      transform: rotate(-90deg)
+      transform-origin: 0 100%
+      z-index: 0
+    &:after
+      content: "Type/ \A Display"
+      white-space: pre
+      font-size: 4.2em
+      line-height: 1.1em
+      color: #ebffcc
+      letter-spacing: -3px
+      transform: rotate(-90deg)
+      position: absolute
+      bottom: 35px
+      left: 959px
+      transform-origin: 0 100%
+      z-index: 0
+  header
+    width: 100%
+    padding: 40px
+    position: relative
+    z-index: 1
+    &:after
+      content: ""
+      display: block
+      height: 0
+      width: 0
+      clear: both
+    .btn-menu
+      float: right
+      display: inline-block
+      font-size: .5em
+      color: #120d13
+      text-decoration: underline
+    h1
+      float: left
+      display: inline-block
+      font-size: 1em
+      line-height: 1em
+      color: #120d13
+      text-decoration: none
+      font-weight: normal
+      width: 100px
+  article
+    padding: 0 40px
+    position: relative
+    z-index: 1
+    &:after
+      content: ""
+      display: block
+      clear: both
+      height: 0
+      width: 0
+    .img
+      @include span-columns(4 of 12)
+      img
+        width: calc(100% + 120px)
+        margin-left: -120px
+    .location
+      @include span-columns(2 of 12)
+      @include shift(2)
+    .misc
+      @include span-columns(2 of 12)
+      @include shift(1)
+    h2
+      font-size: 1em
+      line-height: 1.25em
+      font-weight: normal
+      color: #120d13
+      margin-bottom: 1.8em
+    h3
+      font-size: .5em
+      color: #120d13
+      line-height: 1em
+      font-weight: normal
+      margin-bottom: 3.6em
+    span
+      display: block
+
+  footer
+    width: 100%
+    padding: 20px 40px
+    position: relative
+    z-index: 1
+    &:after
+      content: ""
+      clear: both
+      height: 0
+      width: 0
+      display: block
+    .btn-buy
+      float: left
+    ul
+      float: right
+      padding: 0
+      margin: 0
+      li
+        display: inline-block
+        list-style: none
+        margin-left: 30px
+    a
+      color: #120d13
+      font-size: .5em
