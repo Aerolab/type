@@ -1,9 +1,9 @@
 #crushed
-  @include outer-container($containerWidth)
   @include flex-props(column nowrap, center, center, flex-start)
   color: #665757
-
-  div
+  .wrap
+    @include outer-container($containerWidth)
+  .container
     @include span-columns(3 of 8)
     @include shift(4)
     position: relative
